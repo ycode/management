@@ -88,7 +88,7 @@ export function generateAccessURL(
     email
   });
   
-  const deploymentUrl = process.env.CLOUD_DEPLOYMENT_URL || 'https://cloud.ycode.app';
+  const deploymentUrl = process.env.NEXT_PUBLIC_CLOUD_DEPLOYMENT_URL || 'https://cloud.ycode.app';
   
   return `${deploymentUrl}?token=${token}`;
 }

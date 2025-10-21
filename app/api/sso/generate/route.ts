@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
       email: userEmail || 'user@ycode.app',
     });
     
-    const deploymentUrl = process.env.CLOUD_DEPLOYMENT_URL || 'http://localhost:3000';
+    const deploymentUrl = process.env.NEXT_PUBLIC_CLOUD_DEPLOYMENT_URL || 'http://localhost:3000';
     
     return NextResponse.json({
       token: ssoToken,
